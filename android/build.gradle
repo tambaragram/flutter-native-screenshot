@@ -1,31 +1,33 @@
-group 'net.bengkelrobot.flutter_native_screenshot'
-version '1.0'
+plugins {
+    id 'com.android.library'
+}
+
+group = 'net.bengkelrobot.flutter_native_screenshot'
+version = '1.0'
+
+android {
+    namespace 'net.bengkelrobot.flutter_native_screenshot'
+    compileSdkVersion 35
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 35
+    }
+}
 
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
-
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
-rootProject.allprojects {
+allprojects {
     repositories {
         google()
-        jcenter()
-    }
-}
-
-apply plugin: 'com.android.library'
-
-android {
-    namespace 'net.bengkelrobot.flutter_native_screenshot' 
-    compileSdkVersion 35
-
-    defaultConfig {
-        minSdkVersion 16
+        mavenCentral()
     }
 }
