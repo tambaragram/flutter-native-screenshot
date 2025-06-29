@@ -17,7 +17,7 @@ version = '1.0'
 
 android {
     namespace 'net.bengkelrobot.flutter_native_screenshot'
-    compileSdkVersion 35
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 16
